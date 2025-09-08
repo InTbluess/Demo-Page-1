@@ -14,12 +14,12 @@ const container = document.querySelector(".container");
 
 headerCross.addEventListener("click", () => {
   gsap.to(header, {
-    y: -100, // slide up out of view
-    opacity: 0, // fade out
-    duration: 0.6, // smooth animation
+    y: -100, 
+    opacity: 0,
+    duration: 0.6,
     ease: "power2.inOut",
     onComplete: () => {
-      header.style.display = "none"; // remove from layout after anim
+      header.style.display = "none";
     },
   });
   gsap.to(container, {
@@ -27,7 +27,7 @@ headerCross.addEventListener("click", () => {
     ease: "power2.inOut",
     duration: 0.6,
     onComplete: () => {
-      section1.style.position = "relative"; // remove from layout after anim
+      section1.style.position = "relative";
     },
   });
 });
