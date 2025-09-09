@@ -19,6 +19,13 @@
   display: none;
 }
 
+/* gsap */
+.char {
+  display: inline-block;
+  transform: translateY(100px);
+  /* opacity: 0; */
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   position: relative;
@@ -77,13 +84,14 @@ body {
 
 .section{
   margin: 16px;
-  height: calc(100vh);
+  height: 100vh;
   width: calc(100vw - 60px);
   border-radius: 20px;
   /* border: 2px red solid; */
 }
 
 .section-1 {
+  height: calc(100vh - 186px);
   /* margin-top: 20px; */
   display: flex;
   flex-direction: column;
@@ -210,11 +218,20 @@ nav {
       }
     }
 
-    h1 {
+    .main-text{
+      /* border: 2px solid red; */
       margin-top: 200px;
+      margin-bottom: 0;
       margin-left: 72px;
+    }
+
+    h1 {
+      margin-bottom: 50px;
       font-family: "Orbitron", sans-serif;
-      font-size: 145px;
+      font-size: 7.5rem;
+      text-transform: uppercase;
+      line-height: 6rem;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     .input-area {
